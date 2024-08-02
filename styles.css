@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  font-family: "Oswald", sans-serif;
+}
+
+.background {
+  background-image: url("https://cdnb.artstation.com/p/assets/images/images/040/945/997/large/alena-aenami-clouds-1k.jpg?1630339646");
+ 
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+
+  background-repeat: no-repeat;
+}
+.container {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}
+.container h1 {
+  font-size: 5rem;
+  color: rgba(0, 0, 0, 0.597); /* Ensure text is visible against background */
+  transition: transform 0.3s ease, text-shadow 0.3s ease, color 0.3s ease;
+}
+
+.container h1:hover {
+  transform: scale(1.05);
+  text-shadow: 0 4px 10px rgba(0, 0, 0, 0.529);
+  color: rgb(0, 0, 0); /* Slight color change on hover */
+}
+
+
+.settings {
+  position: absolute;
+  bottom: 30px;
+  right: 20px;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}.settings .fa-cog {
+  font-size: 6rem;
+  color: rgba(255, 255, 255, 0.416);
+  transition: transform 0.2s ease, box-shadow 0.3s ease, color 0.3s ease;
+}
+
+.settings .fa-cog:hover {
+  transform: scale(1.1) rotate(180deg);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  color: rgb(255, 255, 255);
+}
+
+.settings-content {
+  display: flex;
+  gap: 1rem;
+}
+.settings-content input {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+}.settings-content button {
+  padding: 0.5rem 1rem;
+  background-color: rgb(42, 159, 217);
+  border: none;
+  border-radius: 10px;
+  font-size: 2rem;
+  color: rgb(255, 255, 255);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.settings-content button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  background-color: rgb(90, 203, 255);
+}
+
+.hide {
+  display: none;
+}
+.time-container {
+  margin-top: 1rem;
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.time-container h2 {
+  line-height: 60px;
+  text-align: center;
+  font-size: 3rem;
+}
+
+.time-container div {
+  font-size: 5rem;
+  color: rgb(255, 255, 255);
+  transition: transform 0.3s ease, text-shadow 0.3s ease, color 0.3s ease;
+}
+
+.time-container div:hover {
+  transform: scale(2.05);
+  text-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  color: rgb(255, 255, 255); /* Slight color change on hover */
+}
